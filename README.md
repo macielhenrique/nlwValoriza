@@ -1,4 +1,4 @@
-# Valoriza
+# Nlw-6-trilha-nodejs-Valoriza
 
 [![License](https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000)](https://opensource.org/licenses/MIT)
 [![NLW](https://img.shields.io/static/v1?label=NLW&message=Together&color=8257E5&labelColor=000000)](https://nextlevelweek.com/)
