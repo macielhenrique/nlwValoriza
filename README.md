@@ -21,7 +21,7 @@ Valoriza é uma plataforma para fomentar o reconhecimento entre colegas de traba
 1. Clone o repositório: `https://github.com/macielhenrique/nlwValoriza.git`
 2. Instale as dependências: `yarn`
 3. Execute as migrations do banco de dados: `yarn typeorm migration:run`
-4. Inicie a aplicação: `yarn dev`
+4. Inicie a aplicação: `yarn start`
 
 A aplicação estará disponível em `http://localhost:3000`
 
