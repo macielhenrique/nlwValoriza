@@ -1,6 +1,6 @@
 import { User } from "../entities/User";
 import { UsersRepositories } from "../repositories/UserRepositories";
-import { FindOneOptions } from "typeorm";
+import { FindOneOptions, getCustomRepository } from "typeorm";
 
 
 interface IUserRequest{
@@ -12,7 +12,7 @@ interface IUserRequest{
 
 class CreateUserService {
   async execute({ name, email, admin }: IUserRequest) {
-    const userRepository = new UsersRepositories();
+    const userRepository = getCustomRepository(UsersRepositories);
 
     if(!email){
       throw new Error("Email incorrect")
