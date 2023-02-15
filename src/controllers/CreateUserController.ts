@@ -1,18 +1,20 @@
-import { Request, Response} from "express";
+import { Request, Response } from "express";
 import { CreateUserService } from "../services/CreateUsersServices";
-import { RepositoryNotTreeError } from "typeorm";
 
-class CreateUserController{
-
-  async handle(request:Request, response:Response){
-    const {name, email,admin}= request.body;
+class CreateUserController {
+  async handle(request: Request, response: Response) {
+    const { name, email, admin } = request.body;
 
     const createUserService = new CreateUserService();
 
-    const user = await createUserService.execute({name, email, admin})
+    const user = await createUserService.execute({
+      name,
+      email,
+      admin
+    });
 
     return response.json(user);
   }
 }
 
-export {CreateUserController}
+export { CreateUserController };
